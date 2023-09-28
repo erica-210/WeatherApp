@@ -1,0 +1,67 @@
+body {
+    background-color: rgba(204, 227, 238, 0.74);
+}
+
+:root {
+    --font1: 'Roboto', sans-serif;
+}
+
+.header {
+    padding: 10px;
+    margin: 2px;
+    color: white;
+    background-image: linear-gradient(to right, rgba(0, 102, 255, 0), rgb(4, 24, 80));
+    text-align: center;
+    font-family: var(--font1)
+}
+
+.city {
+    margin-left: 10px;
+    display: block;
+    width: 400px;
+}
+
+.title {
+    padding: 2px;
+    margin: 4px;
+    font-family: var(--font1);
+    letter-spacing: 1px;
+}
+
+#bar {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+    border-bottom: 1px solid;
+}
+
+#search {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.btn{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(66, 103, 206, 0.651);
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgba(143, 157, 196, 0.651);
+}
+
+#current-city {
+    margin: 10px 0 10px 0;
+    height: 200px;
+    width: 1300px;
+    border: 2px solid;
+}
+
+#day {
+    padding: 5px;
+    font-family: var(--font1);
+}
