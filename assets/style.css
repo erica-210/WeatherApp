@@ -28,7 +28,7 @@ body {
     letter-spacing: 1px;
 }
 
-#bar {
+#form {
     display: flex;
     flex-direction: column;
     padding-bottom: 7px;

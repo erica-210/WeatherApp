@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Weather Dashboard</title>
 </head>
@@ -23,10 +24,14 @@
     <main class="row align-items-start">
         <div class="city col-6">
             <h2 class="title">Search for a City: </h2>
-            <form id="bar" class="card-body">
+            <form id="form" autocomplete="on">
                 <input name="name" id="search" type="text" autofocus="true" class="form-input" />
                 <button type="submit" class="btn">Search</button>
-              </form>
+            </form>
+
+            <div class="serch-history">
+                <div id="pastCities"></div>
+            </div>
         </div>
 
         <section class="main col-6">

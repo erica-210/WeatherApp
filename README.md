@@ -32,6 +32,9 @@ Pages used as refrences:
 
     Api keys blog post: https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys
 
+    Bootstrap: https://getbootstrap.com/docs/5.3/layout/columns/
+
+    
 Tutoring:
 
     
