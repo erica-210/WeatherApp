@@ -1,26 +1,20 @@
 // create api variable
 var apiKey = "b955c661c8b5cf8dc50a8ba80ffd4d98";
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
 var cityName;
+
 // create weather app function
 
     // create fetch to pull cities in from api
-    function getApi() {
+    function getApi(queryURL) {
      fetch(queryURL, {
-         method: 'GET',
-         headers: {
-            'Content-Type': 'application/json'
-        },
-         body: JSON.stringify({
-            name: cityName
-         })    
+         method: 'GET'
         })
         
      .then(function (response) {
         if (response.ok) {
-            console.log("sucess");
+            console.log(response);
         } else {
-            console.log("not a sucess");
+            console.log(status);
         }
         return response.json();
      })
@@ -36,7 +30,12 @@ var cityName;
     // allow for search button to be clicked 
     
     $('.btn').on('click', function() {
-        console.log("He's ALIVE!")
+        
+        event.preventDefault();
+        cityName = document.getElementById('search').value;
+        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
+        getApi(queryURL);
+        console.log("He's ALIVE!");
     })
 
     // when button is clicked current weather condiontions are displayed
