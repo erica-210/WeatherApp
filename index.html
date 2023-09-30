@@ -22,23 +22,27 @@
     </header>
 
     <main class="row align-items-start">
-        <div class="city col-6">
+        <div class="city col-6 col-md-6">
             <h2 class="title">Search for a City: </h2>
             <form id="form" autocomplete="on">
                 <input name="name" id="search" type="text" autofocus="true" class="form-input" />
                 <button type="submit" class="btn">Search</button>
             </form>
 
-            <div class="serch-history">
-                <div id="pastCities"></div>
+            <div class="search-history">
+                <div id="pastCities">
+                </div>
             </div>
         </div>
 
-        <section class="main col-6">
-            <div id="current-city"></div>
-            <div id="forecast">
+        <section class="main col-6 col-md-6">
+            <div id="current-city">
+                </ul>
+            </div>
+            <div class="row container" id="forecast">
                 <h3 id="day">5-Day Forecast: </h3>
-                <div id="card"></div>
+                <div id="card">
+                </div>
             </div>
         </section>
     </main>

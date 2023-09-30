@@ -55,6 +55,7 @@ body {
 }
 
 #current-city {
+    padding: 8px;
     margin: 10px 0 10px 0;
     height: 200px;
     width: 1300px;
@@ -64,4 +65,54 @@ body {
 #day {
     padding: 5px;
     font-family: var(--font1);
+}
+
+#results {
+    margin-bottom: 10px;
+    font-family: var(--font1);
+    letter-spacing: 1px;
+}
+
+#list {
+    padding-bottom: 8px;
+}
+
+@media (max-width: 750px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .city {
+        width: 25%;
+    }
+
+    #current-city {
+        width: 110%;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 1.45rem;
+    }
+
+    .city {
+        width: 80%;
+    }
+
+    .main {
+        margin: 10px;
+    }
+
+    #current-city {
+        width: 160%;
+    }
 }
