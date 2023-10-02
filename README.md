@@ -16,7 +16,7 @@ Github Repository:
 
 https://github.com/erica-210/WeatherApp
 
-![alt text]()
+![alt text](./assets/images/Weather%20Dashboard%20-%20Google%20Chrome%2010_2_2023%206_16_33%20PM.png)
 
 ## Credits
 
