@@ -10,7 +10,7 @@ body {
     padding: 10px;
     margin: 2px;
     color: white;
-    background-image: linear-gradient(to right, rgba(0, 102, 255, 0), rgb(4, 24, 80));
+    background-image: linear-gradient(to right, rgba(0, 102, 255, 0), #041850);
     text-align: center;
     font-family: var(--font1)
 }
@@ -45,7 +45,7 @@ body {
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-    background-color: rgba(66, 103, 206, 0.651);
+    background-color: #4267cea6;
     color: white;
     border: none;
 }
