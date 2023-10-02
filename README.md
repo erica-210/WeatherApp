@@ -34,10 +34,20 @@ Pages used as refrences:
 
     Bootstrap: https://getbootstrap.com/docs/5.3/layout/columns/
 
+    Mdn Web Docs: https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem
+
+    Digital Ocean: https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
+
+    Geeks for Geeks: https://www.geeksforgeeks.org/how-to-use-the-javascript-fetch-api-to-get-data/
+
     
 Tutoring:
 
-    
+    Jili Jang
+
+Office Hours:
+
+    Will Utterback
 
 ## License
 

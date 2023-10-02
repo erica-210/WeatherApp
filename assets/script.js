@@ -64,23 +64,22 @@ var currentCity = document.querySelector('.current-city');
         }
 
         // save searched data in local storage
+        
         localStorage.setItem(cityName, JSON.stringify(data));
 
         // when button is clicked city searched is added to search history
         // when searched city is clicked under search history
         // then logged city presents current and future condtions again
-        var history = JSON.parse(localStorage.getItem("cityName"));
-        
+        var history = JSON.parse(localStorage.getItem("cityName")) || []
+        var cities = [];
         
         function searchHistory() {
-            cityName = document.getElementById('search').value;
-
             for (i = 0; i < history.length; i++) {
-               //$(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
-                $(".pastCities").children('textarea').val(localStorage.getItem(history[i]));
+                $(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
+                //$(".pastCities").children('textarea').val(localStorage.getItem(history[i]));
             }
         }
-        console.log(localStorage.getItem("history" + i));
+        console.log(JSON.parse(localStorage.getItem("cityName")));
         searchHistory();
      })
 
