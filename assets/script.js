@@ -30,7 +30,7 @@ var currentCity = document.querySelector('.current-city');
         var lat = data.coord.lat;
         var lon = data.coord.lon;
 
-        var url2 = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
+        var url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
 
         fetch(url2)
         .then(response => response.json())
@@ -81,8 +81,8 @@ var currentCity = document.querySelector('.current-city');
               `
 
             for (i = 0; i < history.length; i++) {
-               $(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
-                //$(".pastCities").children('textarea').val(localStorage.getItem(history[i]));
+               //$(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
+                $(".pastCities").children('textarea').val(localStorage.getItem(history[i]));
                 //var li = document.createElement('li')
                 //li.textContent = text;
                 //historyList.appendChild(li);
@@ -103,7 +103,7 @@ var currentCity = document.querySelector('.current-city');
         
         event.preventDefault();
         cityName = document.getElementById('search').value;
-        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
         getApi(queryURL);
         console.log("He's ALIVE!");
     })
