@@ -75,13 +75,18 @@ var currentCity = document.querySelector('.current-city');
         var historyList = document.getElementById('pastCities');
 
         function searchHistory(text) {
+            document.getElementById('pastCities').innerHTML =
+              `
+                <button style="padding:10px; font-weight:bold; text-transform: uppercase; background-color:#4267cea6; width:100px; text-align:center">${cityName} </button>
+              `
+
             for (i = 0; i < history.length; i++) {
-               //$(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
+               $(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
                 //$(".pastCities").children('textarea').val(localStorage.getItem(history[i]));
-                var li = document.createElement('li')
-                li.textContent = text;
-                historyList.appendChild(li);
-            }
+                //var li = document.createElement('li')
+                //li.textContent = text;
+                //historyList.appendChild(li);
+           }
         }
         console.log(history);
         searchHistory();
