@@ -67,19 +67,23 @@ var currentCity = document.querySelector('.current-city');
         
         localStorage.setItem(cityName, JSON.stringify(data));
 
+
         // when button is clicked city searched is added to search history
         // when searched city is clicked under search history
         // then logged city presents current and future condtions again
-        var history = JSON.parse(localStorage.getItem("cityName")) || []
-        var cities = [];
-        
-        function searchHistory() {
+        var history = JSON.parse(localStorage.getItem(cityName));
+        var historyList = document.getElementById('pastCities');
+
+        function searchHistory(text) {
             for (i = 0; i < history.length; i++) {
-                $(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
+               //$(".pastCities").prepend("button type='button' class='btn btn-light prev-city'>" + history[i] + "</button>");
                 //$(".pastCities").children('textarea').val(localStorage.getItem(history[i]));
+                var li = document.createElement('li')
+                li.textContent = text;
+                historyList.appendChild(li);
             }
         }
-        console.log(JSON.parse(localStorage.getItem("cityName")));
+        console.log(history);
         searchHistory();
      })
 
